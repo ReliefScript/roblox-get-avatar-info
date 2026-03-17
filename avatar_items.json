@@ -10,7 +10,7 @@
     "doll", "dolly", "dollface",
     "blouse", "bustier", "corset", "bralette",
     "bikini", "swimsuit", "monokini",
-    "lingerie", "chemise", "negligee",
+    "chemise", "negligee",
     "tiara", "hairbow", "hairclip", "hairpin", "scrunchie", "barrette",
     "heels", "stiletto", "wedges", "pumps", "kitten",
     "ribbon", "lace", "ruffle", "frill", "frilly", "tulle",
@@ -18,11 +18,11 @@
     "handbag", "purse", "clutch",
     "lipstick", "mascara", "blush",
     "princess", "queen", "empress", "duchess", "maiden", "goddess",
-    "maid", "nurse", "witch", "fairy", "angel", "siren",
-    "kawaii", "lolita", "harajuku", "ulzzang",
+    "maid", "nurse", "witch", "fairy",
+    "kawaii", "ulzzang",
     "idol", "magical", "enchantress",
     "pinup", "burlesque", "geisha",
-    "crop", "camisole", "tankini"
+    "crop", "camisole", "tankini", "harajaku"
   ],
   "Male": [
     "male", "masculine",
