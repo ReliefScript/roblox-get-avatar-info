@@ -28,7 +28,7 @@ local function CheckItems(AppearanceInfo)
         for _, Word in Words do
             for _, Gender in { "Male", "Female" } do
                 for _, Keyword in Items[Gender] do
-                    if Word:find(Keyword) then
+                    if Word == Keyword then
                         Score[Gender] += 1
                         table.insert(Hits[Gender], { Keyword = Keyword, Item = Asset.name })
                     end
