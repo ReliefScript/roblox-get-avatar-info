@@ -50,6 +50,7 @@
     "cargo", "chinos", "trousers",
     "chainmail", "gauntlet", "pauldron", "breastplate",
     "bandit", "outlaw", "renegade",
-    "butler", "valet", "steward"
+    "butler", "valet", "steward",
+    "freeforms", "lazer dim"
   ]
 }
