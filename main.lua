@@ -6,14 +6,7 @@ if not isfolder("GetGender") then
 end
 
 local function Get(File)
-    local Path = "GetGender/" .. File
-    local Result = isfile(Path) and readfile(Path)
-    if not Result then
-        local Url = "https://raw.githubusercontent.com/ReliefScript/roblox-get-user-gender/refs/heads/main/" .. File
-        Result = game:HttpGet(Url)
-        writefile(Path, Result)
-    end
-    return HttpService:JSONDecode(Result)
+    return HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/ReliefScript/roblox-get-user-gender/refs/heads/main/" .. File))
 end
 
 local Names = Get("gender_names.json")
