@@ -116,17 +116,15 @@ function GetInfo:GetRace(Target)
         if ColorIds[i] ~= First then return nil end
     end
 
+    local First = ColorIds[1]
+    for i = 2, #ColorIds do
+        if ColorIds[i] ~= First then return nil end
+    end
+    
     local Color      = BrickColor.new(First).Color
     local Brightness = (Color.R + Color.G + Color.B) / 3
-
-    local Race
-    if Brightness >= 0.65 then
-        Race = "White"
-    elseif Brightness <= 0.38 then
-        Race = "Black"
-    elseif Brightness > 0.38 and Brightness < 0.65 then
-        Race = "Mixed"
-    else
+    
+    if not (Color.R >= Color.G and Color.G >= Color.B * 0.75) then
         return nil
     end
 
