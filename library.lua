@@ -4,7 +4,7 @@ local Players = game:GetService("Players")
 local AppearanceCache = {}
 
 local function Get(File)
-    return HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/ReliefScript/roblox-get-avatar-info/refs/heads/main/" .. File))
+    return HttpService:JSONDecode(game:HttpGet("https://raw.githubusercontent.com/ReliefScript/roblox-get-avatar-info/refs/heads/main/data/" .. File))
 end
 
 local Names = Get("gender_names.json")
